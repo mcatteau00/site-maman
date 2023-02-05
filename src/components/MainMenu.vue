@@ -11,7 +11,6 @@
             >La vocation du Cabinet</RouterLink
           >
         </li>
-
         <li>
           <RouterLink class="link" :to="{ name: 'MonApproche' }"
             >Mon approche</RouterLink
