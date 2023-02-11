@@ -1,40 +1,33 @@
 <template>
-  <h1 class="text-vert text-center text-3xl m-3 p-64">
-    Cabinet de psychothérapie & psychologie clinique
-  </h1>
-  <div class="flex flex-auto">
-    <img class="img w-1/3 p-12" src="@/images/Photo_maman.jpg" />
-    <div class="container w-2/3">
-      <h2 class="text-vert text-center text-3xl m-3">Bienvenue à vous</h2>
-      <div class="text">
-        Je suis Céline Allafort, psychologue clinicienne et praticienne
-        narrative.
-        <br />
+  <v-content>
+    <div
+      class="h-screen w-screen bg-pale grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"
+    >
+      <h1 class="text-vert text-4xl col-span-4">
+        Cabinet de psychothérapie & psychologie clinique
+      </h1>
+      <img class="col-span-2 h-auto" src="@/images/separateur-1.jpg" />
+      <img class="col-span-2 h-auto" src="@/images/separateur-2.jpg" />
+      <h2 class="text-vert text-2xl col-span-4 text-center">
+        Bienvenue à vous
+      </h2>
+      <img class="col-span-2 m-4 bg-pale" src="@/images/Photo_maman.jpg" />
+      <div class="col-span-2 text-xl text-vert bg-pale">
+        <p>
+          Je m'appelle Céline Allafort, je suis psychologue clinicienne et
+          praticienne narrative et je suis ravie de pouvoir vous accueillir sur
+          ce premier espace de rencontre
+        </p>
+        <p>
+          Je serai heureuse de vous recevoir dans mon cabinet afin qu'ensemble,
+          nous puissions prendre soin de vous.
+        </p>
+        <p>Au plaisir de vous accompagner sur votre chemin</p>
       </div>
-      <div class="text">
-        Je suis ravie de vous accueillir sur ce premier espace de rencontre.
-        <br />
-      </div>
-      <div class="text">
-        Je serai heureuse de vous recevoir dans mon cabinet, afin qu'ensemble,
-        nous puissions prendre soin de vous.
-        <br />
-      </div>
-      <div class="text">Au plaisir de vous accompagner sur votre chemin.</div>
     </div>
-  </div>
+  </v-content>
 </template>
 
 <script></script>
 
-<style scoped>
-.text {
-  @apply text-xl text-justify text-vert w-64;
-}
-.container {
-  @apply space-y-3 m-3;
-}
-.img {
-  @apply max-w-xl h-auto m-3;
-}
-</style>
+<style scoped></style>
