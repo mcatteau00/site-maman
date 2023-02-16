@@ -3,7 +3,7 @@
     <div class="col-span-1 row-span-6 col-start-1 row-start-1 bg-pale"></div>
     <div class="col-span-10 col-start-2 row-start-1">
       <h1 class="text-vert text-3xl text-center my-4">
-        Informations et tarifs
+        Quelques mots sur la psychologie et la psychothérapie
       </h1>
     </div>
     <div class="col-span-10 row-start-2 md:flex md:flex-row-reverse">
@@ -16,13 +16,10 @@
       <div
         class="text-vert text-justify text-lg p-4 md:w-1/2 md:px-10 lg:px-20"
       >
-        <h2 class="text-center text-xl font-bold">Informations</h2>
         <p class="">
-          Nous pouvons nous retrouver à mon cabinet et/ou réaliser des
-          consultations en visio. <br />Nous définirons ensemble les modalités
-          d'accompagnement qui vous conviennent, en fonction des changements que
-          vous souhaitez dans votre vie et/ou de la problématique que vous
-          rencontrez.
+          Les raisons qui nous amènent à pousser la porte d'un psychologue
+          psychothérapeute sont diverses. Mais c'est souvent la sensation
+          d'impasse.
         </p>
       </div>
     </div>
@@ -36,11 +33,12 @@
       <div
         class="text-vert text-justify text-lg p-4 md:w-1/2 md:px-10 lg:px-20"
       >
-        <h2 class="text-center text-xl font-bold">Tarifs</h2>
-        <p>
-          Consultation individuelle, adulte, enfant ou adolescent : 60€ pour 45
-          minutes environ. <br />Consultation de couple ou de famille : 80€ pour
-          une heure environ
+        <p class="">
+          Nous avons alors le sentiment d'être entravés par le poids de notre
+          histoire, de notre environnement ou des événements douloureux que nous
+          traversons. <br />
+          Nous nous sentons alors incapables de poursuivre notre chemin avec ce
+          que nous connaissons de nous-mêmes.
         </p>
       </div>
     </div>
@@ -54,10 +52,11 @@
       <div
         class="text-vert text-justify text-lg p-4 md:w-1/2 md:px-10 lg:px-20"
       >
-        <p class="">
-          Toute consultation manquée ou non annulée 48h à l'avance est due, sauf
-          cas de force majeure. <br />Paiement en chèque ou en espèces
-          uniquement.
+        <p>
+          La psychothérapie permet d'explorer, accompagné d'un autre, les désirs
+          qui nous portent en avant mais aussi les peurs qui nous paralysent
+          tant individuellement que dans les liens que nous tissons au sein de
+          nos familles.
         </p>
       </div>
     </div>
@@ -72,11 +71,10 @@
         class="text-vert text-justify text-lg md:h-full bg-pale p-4 md:w-1/2 md:px-10 lg:px-20"
       >
         <p class="">
-          Les consultations avec un psychologue ne font pas l'objet d'un
-          remboursement par la sécurité sociale, en dehors du service "Mon psy"
-          auquel je n'ai pas adhéré. <br />
-          Cependant, certaines mutuelles prennent en charge un certain nombre de
-          consultations. <br />Renseignez-vous auprès de votre mutuelle.
+          Ainsi la psychothérapie est une rencontre, favorisant la poursuite de
+          notre chemin singulier. En lien avec un(e) psychologue
+          bienveillant(e), nous pouvons entreprendre un voyage qui nous mène à
+          davantage de liberté et d'authenticité.
         </p>
       </div>
     </div>
@@ -88,13 +86,13 @@
         />
       </div>
       <div
-        class="text-vert text-center text-lg md:h-full bg-pale p-4 md:w-1/2 md:px-10 lg:px-20"
+        class="text-vert text-justify text-lg md:h-full bg-pale p-4 md:w-1/2 md:px-10 lg:px-20"
       >
-        <h2 class="text-xl font-bold">Informations légales</h2>
-        <ul>
-          <li>Numéro Adeli : 339333684</li>
-          <li>Numéro Siren : 947819132</li>
-        </ul>
+        <p class="">
+          Il nous est alors possible de dépasser les attentes des autres, de
+          sortir des répétitions qui nous enferment et d'accéder à une vie plus
+          épanouie, malgré les aléas de la vie.
+        </p>
       </div>
     </div>
     <div class="col-span-1 row-span-6 col-start-12 row-start-1 bg-pale"></div>

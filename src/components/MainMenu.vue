@@ -12,13 +12,21 @@
       </div>
       <ul v-show="!mobile" class="navigation">
         <li>
-          <RouterLink class="link" :to="{ name: 'LaVocationDuCabinet' }"
-            >La vocation du Cabinet</RouterLink
+          <RouterLink class="link" :to="{ name: 'Home' }">Accueil</RouterLink>
+        </li>
+        <li>
+          <RouterLink class="link" :to="{ name: 'LaPsychotherapie' }"
+            >La Psychothérapie</RouterLink
           >
         </li>
         <li>
-          <RouterLink class="link" :to="{ name: 'MonApproche' }"
-            >Mon approche</RouterLink
+          <RouterLink class="link" :to="{ name: 'Comment' }"
+            >Comment ?</RouterLink
+          >
+        </li>
+        <li>
+          <RouterLink class="link" :to="{ name: 'PourQui' }"
+            >Pour qui ?</RouterLink
           >
         </li>
         <li>
@@ -54,13 +62,18 @@
       <transition name="mobile-nav">
         <ul v-show="mobileNav" class="dropdown-nav">
           <li>
-            <RouterLink class="link" :to="{ name: 'LaVocationDuCabinet' }"
-              >La vocation du Cabinet</RouterLink
+            <RouterLink class="link" :to="{ name: 'LaPsychotherapie' }"
+              >La psychothérapie</RouterLink
             >
           </li>
           <li>
-            <RouterLink class="link" :to="{ name: 'MonApproche' }"
-              >Mon approche</RouterLink
+            <RouterLink class="link" :to="{ name: 'Comment' }"
+              >Comment ?</RouterLink
+            >
+          </li>
+          <li>
+            <RouterLink class="link" :to="{ name: 'PourQui' }"
+              >Pour qui ?</RouterLink
             >
           </li>
           <li>
@@ -139,7 +152,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 header {
-  @apply bg-vert z-50 w-full fixed top-0 ease-in-out duration-500 h-24 text-orange text-xl;
+  @apply bg-vert z-50 w-full fixed top-0 ease-in-out duration-500 h-28 text-orange text-xl;
 
   nav {
     @apply flex flex-row py-0 px-12 w-11/12 my-0 mx-auto ease-in-out duration-500;
@@ -164,13 +177,13 @@ header {
   @apply underline text-pale;
 }
 img {
-  @apply h-24 absolute top-0 left-0;
+  @apply h-24 absolute top-2 left-2;
 }
 ul {
   @apply flex flex-row space-x-8 text-center relative left-36 top-8;
 }
 .fa {
-  @apply items-center absolute top-8 right-12;
+  @apply items-center absolute top-12 right-12;
 }
 .icon-active {
   @apply rotate-180 duration-500;
@@ -184,6 +197,6 @@ ul {
   }
 }
 .branding {
-  @apply place-self-center;
+  @apply my-auto;
 }
 </style>

@@ -1,9 +1,7 @@
 <template>
   <body class="bg-pale h-full w-full">
-    <div class="relative top-24 grid grid-cols-12 auto-rows-mini">
-      <div
-        class="col-start-1 row-start-1 row-span-full col-span-1 bg-pale"
-      ></div>
+    <div class="relative top-28 grid grid-cols-12 auto-rows-mini">
+      <div class="col-start-1 row-start-1 row-span-6 col-span-1 bg-pale"></div>
       <div class="col-span-10 row-start-1 row-span-1 bg-pale">
         <h1 class="text-vert text-4xl text-center m-10">
           Cabinet de psychothérapie & psychologie clinique
@@ -13,9 +11,11 @@
         class="row-start-2 row-span-1 col-span-10 m-4 py-10 md:p-0 md:flex md:place-content-center bg-pale"
       >
         <div class="">
-          <img class="h-auto md:h-64 md:m-4" src="@/images/logo.jpg" />
+          <img class="h-auto md:h-72 md:m-4" src="@/images/logo.jpg" />
         </div>
-        <div class="text-vert text-center pt-2 md:text-right md:m-4">
+        <div
+          class="text-vert text-lg text-center pt-2 italic md:text-right md:m-4 md:align-middle"
+        >
           <p class="">
             "Faire de l’interruption, un nouveau chemin,
             <br />
@@ -36,11 +36,13 @@
           </p>
         </div>
       </div>
-      <div class="row-start-3 row-span-1 col-span-10 bg-pale">
-        <h2 class="text-vert text-3xl text-center py-2">Bienvenue à vous</h2>
+      <div class="row-start-3 row-span-1 col-start-2 col-span-10 bg-pale">
+        <h2 class="text-vert text-3xl text-center py-2 mb-8">
+          Bienvenue à vous
+        </h2>
       </div>
       <div
-        class="row-start-4 row-span-1 col-span-10 bg-pale md:flex md:place-content-center"
+        class="row-start-4 row-span-1 col-start-2 col-span-10 bg-pale md:flex md:flex-row-reverse md:place-content-center"
       >
         <div class="">
           <img
@@ -49,7 +51,7 @@
           />
         </div>
         <div
-          class="text-vert text-justify p-10 md:w-3/6 md:mx-4 place-self-center"
+          class="text-vert text-justify p-10 md:w-3/6 md:mx-4 place-self-center bg-pale"
         >
           <p class="text-xl">
             Je m'appelle Céline Allafort, je suis psychologue clinicienne et
@@ -67,9 +69,7 @@
           </p>
         </div>
       </div>
-      <div
-        class="col-span-1 col-start-12 row-start-1 row-span-full bg-pale"
-      ></div>
+      <div class="col-span-1 col-start-12 row-start-1 row-span-6 bg-pale"></div>
     </div>
   </body>
 </template>

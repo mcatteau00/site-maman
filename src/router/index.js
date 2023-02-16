@@ -14,18 +14,18 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/ContactView.vue"),
   },
   {
-    path: "/LaVocationDuCabinet",
-    name: "LaVocationDuCabinet",
+    path: "/LaPsychotherapie",
+    name: "LaPsychotherapie",
     component: () =>
       import(
-        /* webpackChunkName: "about" */ "../views/LaVocationDuCabinetView.vue"
+        /* webpackChunkName: "about" */ "../views/LaPsychotherapieView.vue"
       ),
   },
   {
-    path: "/MonApproche",
-    name: "MonApproche",
+    path: "/Comment",
+    name: "Comment",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/MonApprocheView.vue"),
+      import(/* webpackChunkName: "about" */ "../views/CommentView.vue"),
   },
   {
     path: "/QuiSuisJe",
@@ -44,6 +44,12 @@ const routes = [
     name: "Ressources",
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/RessourcesView.vue"),
+  },
+  {
+    path: "/PourQui",
+    name: "PourQui",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/PourQuiView.vue"),
   },
 ];
 

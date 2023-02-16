@@ -1,21 +1,14 @@
 <template>
-  <div class="Contact"><TrueContactForm /></div>
+  <div></div>
 </template>
 
-<script>
-import TrueContactForm from "@/components/TrueContactForm.vue";
-export default {
-  components: {
-    TrueContactForm,
-  },
-};
-</script>
+<script></script>
 
 <style scoped>
 .input {
   @apply m-4;
 }
 .Contact {
-  @apply m-4 p-4 text-xl;
+  @apply m-4 p-4 text-xl absolute top-24 bg-pale;
 }
 </style>
