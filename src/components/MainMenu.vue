@@ -124,7 +124,7 @@ export default {
 
     checkScreen() {
       this.windowWidth = window.innerWidth;
-      if (this.windowWidth <= 1250) {
+      if (this.windowWidth <= 1050) {
         this.mobile = true;
         return;
       }
@@ -139,7 +139,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 header {
-  @apply bg-vert z-50 w-full fixed top-0 ease-in-out duration-500 h-24 text-orange text-2xl;
+  @apply bg-vert z-50 w-full fixed top-0 ease-in-out duration-500 h-24 text-orange text-xl;
 
   nav {
     @apply flex flex-row py-0 px-12 w-11/12 my-0 mx-auto ease-in-out duration-500;
@@ -161,26 +161,29 @@ header {
 }
 
 .link:hover {
-  @apply underline uppercase text-pale;
+  @apply underline text-pale;
 }
 img {
   @apply h-24 absolute top-0 left-0;
 }
 ul {
-  @apply flex flex-row space-x-8 justify-items-end relative left-52 top-8;
+  @apply flex flex-row space-x-8 text-center relative left-36 top-8;
 }
 .fa {
-  @apply h-full items-center absolute top-8 right-12;
+  @apply items-center absolute top-8 right-12;
 }
 .icon-active {
-  @apply rotate-180;
+  @apply rotate-180 duration-500;
 }
 
 .dropdown-nav {
-  @apply flex flex-col space-y-3 fixed w-full max-w-xs h-full bg-vert top-0 left-0;
+  @apply flex flex-col space-y-4 py-4 fixed w-64 h-full bg-vert top-0 left-0;
 
   .link {
-    @apply relative left-3;
+    @apply text-center;
   }
+}
+.branding {
+  @apply place-self-center;
 }
 </style>
