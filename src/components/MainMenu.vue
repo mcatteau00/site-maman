@@ -5,7 +5,34 @@
     integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
     crossorigin="anonymous"
   />
-  <header :class="{ 'scrolled-nav': scrolledNav }">
+  <div class="grid grid-cols-12">
+    <div class="col-end-2 col-start-1 items-center align-middle">
+      <a
+        class=""
+        href="https://fr.linkedin.com/in/c%C3%A9line-allafort-7a4ab5162"
+        target="_blank"
+        rel="noopener"
+        ><img class="h-6 w-6 my-1 mx-4" src="@/images/linkedin_logo.png"
+      /></a>
+    </div>
+    <div
+      class="col-end-11 col-start-9 flex space-x-2 justify-end items-center mx-4"
+    >
+      <img
+        class="h-4 w-3 self-center"
+        src="@/images/phone_icon.png"
+        alt="logo-téléphone"
+      />
+      <p>06-56-67-62-24</p>
+    </div>
+    <div
+      class="col-span-2 col-start-11 flex space-x-2 justify-end items-center mx-4"
+    >
+      <img class="h-4 w-4 self-center" src="@/images/mail_icon.png" />
+      <p>celine.allafort.pro@gmail.com</p>
+    </div>
+  </div>
+  <header class="scrolled-nav">
     <nav>
       <div class="branding">
         <img class="h-6" src="@/images/logo.jpg" />
@@ -15,28 +42,57 @@
           <RouterLink class="link" :to="{ name: 'Home' }">Accueil</RouterLink>
         </li>
         <li>
-          <RouterLink class="link" :to="{ name: 'LaPsychotherapie' }"
-            >La Psychothérapie</RouterLink
-          >
+          <div class="group">
+            <h2 class="">La Psychothérapie</h2>
+            <div class="hidden group-hover:block">
+              <ul class="flex flex-col bg-vert p-4 space-y-4">
+                <li>
+                  <RouterLink class="link" :to="{ name: 'LaPsychotherapie' }"
+                    >Quelques mots sur la psychologie <br />
+                    et la psychothérapie</RouterLink
+                  >
+                </li>
+                <li>
+                  <RouterLink class="link" :to="{ name: 'PourQui' }"
+                    >Pour qui ?</RouterLink
+                  >
+                </li>
+                <li>
+                  <RouterLink class="link" :to="{ name: 'Comment' }"
+                    >Comment ?</RouterLink
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </li>
         <li>
-          <RouterLink class="link" :to="{ name: 'Comment' }"
-            >Comment ?</RouterLink
-          >
-        </li>
-        <li>
-          <RouterLink class="link" :to="{ name: 'PourQui' }"
-            >Pour qui ?</RouterLink
-          >
-        </li>
-        <li>
-          <RouterLink class="link" :to="{ name: 'QuiSuisJe' }"
-            >Qui suis je ?</RouterLink
-          >
+          <div class="group">
+            <h2>Qui suis je ?</h2>
+            <div class="hidden group-hover:block">
+              <ul class="flex flex-col bg-vert p-4 space-y-4">
+                <li class="">
+                  <RouterLink class="link" :to="{ name: 'QuiSuisJe' }"
+                    >Mon cheminement</RouterLink
+                  >
+                </li>
+                <li>
+                  <RouterLink class="link" :to="{ name: 'Aujourdhui' }"
+                    >Aujourd'hui</RouterLink
+                  >
+                </li>
+                <li>
+                  <RouterLink class="link" :to="{ name: 'MesFormations' }"
+                    >Mes formations</RouterLink
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </li>
         <li>
           <RouterLink class="link" :to="{ name: 'Informations' }"
-            >Informations</RouterLink
+            >Informations et tarifs</RouterLink
           >
         </li>
         <li>
@@ -62,28 +118,60 @@
       <transition name="mobile-nav">
         <ul v-show="mobileNav" class="dropdown-nav">
           <li>
-            <RouterLink class="link" :to="{ name: 'LaPsychotherapie' }"
-              >La psychothérapie</RouterLink
-            >
+            <RouterLink class="link" :to="{ name: 'Home' }">Accueil</RouterLink>
           </li>
           <li>
-            <RouterLink class="link" :to="{ name: 'Comment' }"
-              >Comment ?</RouterLink
-            >
+            <div class="group">
+              <h2 class="">La Psychothérapie</h2>
+              <div class="hidden group-hover:block">
+                <ul class="flex flex-col bg-vert p-4 space-y-4">
+                  <li>
+                    <RouterLink class="link" :to="{ name: 'LaPsychotherapie' }"
+                      >Quelques mots sur la <br />
+                      psychologie et la psychothérapie</RouterLink
+                    >
+                  </li>
+                  <li>
+                    <RouterLink class="link" :to="{ name: 'PourQui' }"
+                      >Pour qui ?</RouterLink
+                    >
+                  </li>
+                  <li>
+                    <RouterLink class="link" :to="{ name: 'Comment' }"
+                      >Comment ?</RouterLink
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li>
-            <RouterLink class="link" :to="{ name: 'PourQui' }"
-              >Pour qui ?</RouterLink
-            >
-          </li>
-          <li>
-            <RouterLink class="link" :to="{ name: 'QuiSuisJe' }"
-              >Qui suis je ?</RouterLink
-            >
+            <div class="group">
+              <h2>Qui suis je ?</h2>
+              <div class="hidden group-hover:block">
+                <ul class="flex flex-col bg-vert p-4 space-y-4">
+                  <li class="">
+                    <RouterLink class="link" :to="{ name: 'QuiSuisJe' }"
+                      >Mon cheminement</RouterLink
+                    >
+                  </li>
+                  <li>
+                    <RouterLink class="link" :to="{ name: 'Aujourdhui' }"
+                      >Aujourd'hui</RouterLink
+                    >
+                  </li>
+                  <li>
+                    <RouterLink class="link" :to="{ name: 'MesFormations' }"
+                      >Mes formations</RouterLink
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li>
             <RouterLink class="link" :to="{ name: 'Informations' }"
-              >Informations</RouterLink
+              >Informations et tarifs</RouterLink
             >
           </li>
           <li>
@@ -152,7 +240,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 header {
-  @apply bg-vert z-50 w-full fixed top-0 ease-in-out duration-500 h-28 text-orange text-xl;
+  @apply bg-vert z-50 w-full fixed top-8 ease-in-out duration-500 h-28 text-orange text-xl;
 
   nav {
     @apply flex flex-row py-0 px-12 w-11/12 my-0 mx-auto ease-in-out duration-500;
@@ -166,7 +254,7 @@ header {
     @apply font-medium list-none;
   }
   li {
-    @apply p-4 ml-4;
+    @apply relative p-4 ml-4;
   }
   .link {
     @apply text-sm ease-in-out duration-500 pb-1 border-b-0;
@@ -176,11 +264,8 @@ header {
 .link:hover {
   @apply underline text-pale;
 }
-img {
-  @apply h-24 absolute top-2 left-2;
-}
-ul {
-  @apply flex flex-row space-x-8 text-center relative left-36 top-8;
+.navigation {
+  @apply flex flex-row space-x-8 text-center relative left-36 top-10;
 }
 .fa {
   @apply items-center absolute top-12 right-12;
@@ -198,5 +283,8 @@ ul {
 }
 .branding {
   @apply my-auto;
+}
+.group {
+  @apply relative flex flex-col;
 }
 </style>

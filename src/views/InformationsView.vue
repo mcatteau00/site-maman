@@ -16,7 +16,8 @@
       <div
         class="text-vert text-justify text-lg p-4 md:w-1/2 md:px-10 lg:px-20"
       >
-        <h2 class="text-center text-xl font-bold">Informations</h2>
+        <h2 class="text-center text-xl font-bold italic">Informations</h2>
+        <br />
         <p class="">
           Nous pouvons nous retrouver à mon cabinet et/ou réaliser des
           consultations en visio. <br />Nous définirons ensemble les modalités
@@ -37,10 +38,15 @@
         class="text-vert text-justify text-lg p-4 md:w-1/2 md:px-10 lg:px-20"
       >
         <h2 class="text-center text-xl font-bold">Tarifs</h2>
+        <br />
         <p>
-          Consultation individuelle, adulte, enfant ou adolescent : 60€ pour 45
-          minutes environ. <br />Consultation de couple ou de famille : 80€ pour
-          une heure environ
+          <em class="italic">
+            - Consultation individuelle, adulte, enfant ou adolescent :</em
+          >
+          60€ pour 45 minutes environ. <br />
+          <em class="italic"> - Consultation de couple ou de famille :</em>
+          <br />
+          80€ pour une heure environ
         </p>
       </div>
     </div>
@@ -91,6 +97,7 @@
         class="text-vert text-center text-lg md:h-full bg-pale p-4 md:w-1/2 md:px-10 lg:px-20"
       >
         <h2 class="text-xl font-bold">Informations légales</h2>
+        <br />
         <ul>
           <li>Numéro Adeli : 339333684</li>
           <li>Numéro Siren : 947819132</li>

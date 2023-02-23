@@ -3,7 +3,7 @@
     <div class="relative top-28 grid grid-cols-12 auto-rows-mini">
       <div class="col-start-1 row-start-1 row-span-6 col-span-1 bg-pale"></div>
       <div class="col-span-10 row-start-1 row-span-1 bg-pale">
-        <h1 class="text-vert text-4xl text-center m-10">
+        <h1 class="text-vert text-4xl text-center m-5">
           Cabinet de psychothérapie & psychologie clinique
         </h1>
       </div>
@@ -11,10 +11,10 @@
         class="row-start-2 row-span-1 col-span-10 m-4 py-10 md:p-0 md:flex md:place-content-center bg-pale"
       >
         <div class="">
-          <img class="h-auto md:h-72 md:m-4" src="@/images/logo.jpg" />
+          <img class="h-auto md:h-72" src="@/images/logo.jpg" />
         </div>
         <div
-          class="text-vert text-lg text-center pt-2 italic md:text-right md:m-4 md:align-middle"
+          class="text-vert text-lg text-center pt-2 italic md:text-right md:align-middle"
         >
           <p class="">
             "Faire de l’interruption, un nouveau chemin,
@@ -37,21 +37,13 @@
         </div>
       </div>
       <div class="row-start-3 row-span-1 col-start-2 col-span-10 bg-pale">
-        <h2 class="text-vert text-3xl text-center py-2 mb-8">
-          Bienvenue à vous
-        </h2>
+        <h2 class="text-vert text-3xl text-center">Bienvenue à vous</h2>
       </div>
       <div
         class="row-start-4 row-span-1 col-start-2 col-span-10 bg-pale md:flex md:flex-row-reverse md:place-content-center"
       >
-        <div class="">
-          <img
-            class="w-auto mx-auto self-center m-4"
-            src="@/images/Photo_maman.jpg"
-          />
-        </div>
         <div
-          class="text-vert text-justify p-10 md:w-3/6 md:mx-4 place-self-center bg-pale"
+          class="text-vert text-center p-5 md:mx-4 place-self-center bg-pale"
         >
           <p class="text-xl">
             Je m'appelle Céline Allafort, je suis psychologue clinicienne et

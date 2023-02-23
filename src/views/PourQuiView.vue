@@ -32,9 +32,9 @@
         class="text-vert text-justify text-lg p-4 md:w-1/2 md:px-10 lg:px-20"
       >
         <p class="">
-          En effet, j'ai une sensibilité particulière à la famille, espace de
-          sociabilité originel où nous tissons nos premiers liens affectifs et
-          où nous nous construisons.
+          J'ai une sensibilité particulière à la famille, espace de sociabilité
+          originel où nous tissons nos premiers liens affectifs et où nous nous
+          construisons.
         </p>
       </div>
     </div>
