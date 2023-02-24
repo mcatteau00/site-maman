@@ -1,21 +1,40 @@
 <template>
-  <div class="relative top-28 grid grid-cols-12 auto-rows-mini">
-    <div class="col-span-1 row-span-6 col-start-1 row-start-1 bg-pale"></div>
-    <div class="col-span-10 col-start-2 row-start-1">
-      <h1 class="text-vert text-3xl text-center my-4">Ressources</h1>
+  <div class="gcontainer">
+    <div class="gbandeau1"></div>
+    <div class="gitem1">
+      <h1 class="gtitle">Ressources</h1>
     </div>
-    <div class="col-span-10 row-start-2 md:flex md:flex-row-reverse">
-      <div class="md:w-1/2 md:m-auto">
-        <img
-          class="h-32 m-auto aspect-square"
-          src="@/images/separateur-1.jpg"
-        />
+    <div class="gitem2">
+      <div class="imgcont">
+        <img class="img1" src="@/images/ressource1.png" />
       </div>
-      <div
-        class="text-vert text-justify text-lg p-4 md:w-1/2 md:px-10 lg:px-20"
-      >
-        <h2 class="text-center italic font-bold">
-          "Ou peut être une nuit" <br />Inceste : La guerre du silence <br />
+      <div class="textcont">
+        <h2 class="gtitle2">Mémoire traumatique et victimologie</h2>
+        <br />
+        <p class="">
+          Un site très bien fait et plein de ressources pour tous les
+          professionnels du soin mais aussi toutes les personnes souffrant de
+          psychotraumatisme. Pour mieux se comprendre et aussi savoir comment
+          agir. Ils envoient aussi une brochure destinée aux enfants dessinéé
+          par Claude Ponti, intitulée "Quand on te fait du mal. Informations sur
+          les violences et leurs conséquences". A mettre entre toutes les mains.
+        </p>
+        <a
+          class="text-blue-300"
+          href="https://www.memoiretraumatique.org/"
+          target="_blank"
+          rel="noopener"
+          ><em>Cliquez ici</em></a
+        >
+      </div>
+    </div>
+    <div class="gitem3">
+      <div class="imgcont">
+        <img class="img1" src="@/images/ressource2.png" />
+      </div>
+      <div class="textcont">
+        <h2 class="gtitle2">
+          "Ou peut être une nuit" <br />"Inceste : La guerre du silence" <br />
           Un podcast de Louie Media
         </h2>
         <br />
@@ -35,48 +54,12 @@
         >
       </div>
     </div>
-    <div class="col-span-10 row-start-3 md:flex">
-      <div class="md:w-1/2 md:m-auto">
-        <img
-          class="h-20 m-auto aspect-square"
-          src="@/images/separateur-2.jpg"
-        />
+    <div class="gitem4">
+      <div class="imgcont">
+        <img class="img1" src="@/images/ressource3.png" />
       </div>
-      <div
-        class="text-vert text-justify text-lg p-4 md:w-1/2 md:px-10 lg:px-20"
-      >
-        <h2 class="text-center italic font-bold">
-          Mémoire traumatique et victimologie
-        </h2>
-        <br />
-        <p class="">
-          Un site très bien fait et plein de ressources pour tous les
-          professionnels du soin mais aussi toutes les personnes souffrant de
-          psychotraumatisme. Pour mieux se comprendre et aussi savoir comment
-          agir. Ils envoient aussi une brochure destinée aux enfants dessinéé
-          par Claude Ponti, intitulée "Quand on te fait du mal. Informations sur
-          les violences et leurs conséquences". A mettre entre toutes les mains.
-        </p>
-        <a
-          class="text-blue-300"
-          href="https://www.memoiretraumatique.org/"
-          target="_blank"
-          rel="noopener"
-          ><em>Cliquez ici</em></a
-        >
-      </div>
-    </div>
-    <div class="col-span-10 row-start-4 bg-pale md:flex md:flex-row-reverse">
-      <div class="md:w-1/2 md:m-auto">
-        <img
-          class="h-20 m-auto aspect-square"
-          src="@/images/separateur-3.jpg"
-        />
-      </div>
-      <div
-        class="text-vert text-justify text-lg p-4 md:w-1/2 md:px-10 lg:px-20"
-      >
-        <h2 class="text-center italic font-bold">
+      <div class="textcont">
+        <h2 class="gtitle2">
           "Vincent, entendeurs de voix" <br />
           une émission "Les pieds sur terre"
         </h2>
@@ -101,13 +84,47 @@
         >
       </div>
     </div>
-    <div class="col-span-1 row-span-6 col-start-12 row-start-1 bg-pale"></div>
-    <div
-      class="col-span-12 row-span-1 col-start-1 row-start-5 h-5 w-full bg-pale"
-    ></div>
+    <div class="gbandeau2"></div>
   </div>
 </template>
 
 <script></script>
 
-<style scoped></style>
+<style scoped>
+.gcontainer {
+  @apply relative top-40 grid grid-cols-12 bg-pale;
+}
+.gbandeau1 {
+  @apply col-span-1 row-span-6 col-start-1 row-start-1;
+}
+.gbandeau2 {
+  @apply col-span-1 row-span-6 col-start-12 row-start-1;
+}
+.gtitle {
+  @apply text-vert text-3xl text-center my-8;
+}
+.gtitle2 {
+  @apply text-center text-xl font-bold italic;
+}
+.imgcont {
+  @apply md:w-1/2 md:m-auto;
+}
+.img1 {
+  @apply h-80 m-auto;
+}
+.textcont {
+  @apply text-vert text-justify text-lg pt-4 indent-4 md:w-1/2 md:px-10 lg:px-20;
+}
+.gitem1 {
+  @apply col-span-10 col-start-2 row-start-1;
+}
+.gitem2 {
+  @apply col-span-10 row-start-2 md:flex md:flex-row-reverse;
+}
+.gitem3 {
+  @apply col-span-10 row-start-3 md:flex;
+}
+.gitem4 {
+  @apply col-span-10 row-start-4 md:flex md:flex-row-reverse;
+}
+</style>

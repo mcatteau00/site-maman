@@ -1,5 +1,5 @@
 <template>
-  <div class="relative top-28 grid grid-cols-12 auto-rows-mini">
+  <div class="relative top-36 grid grid-cols-12 auto-rows-mini">
     <div class="col-span-1 row-span-6 col-start-1 row-start-1 bg-pale"></div>
     <div class="col-span-10 row-span-1 col-start-2 row-start-2">
       <h1 class="text-vert text-3xl text-center">

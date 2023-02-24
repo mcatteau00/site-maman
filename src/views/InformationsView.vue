@@ -1,24 +1,17 @@
 <template>
-  <div class="relative top-28 grid grid-cols-12 auto-rows-mini">
-    <div class="col-span-1 row-span-6 col-start-1 row-start-1 bg-pale"></div>
-    <div class="col-span-10 col-start-2 row-start-1">
-      <h1 class="text-vert text-3xl text-center my-4">
-        Informations et tarifs
-      </h1>
+  <div class="gcontainer">
+    <div class="gbandeau1"></div>
+    <div class="gitem1">
+      <h1 class="gtitle">Informations et tarifs</h1>
     </div>
-    <div class="col-span-10 row-start-2 md:flex md:flex-row-reverse">
-      <div class="md:w-1/2 md:m-auto">
-        <img
-          class="h-32 m-auto aspect-square"
-          src="@/images/separateur-1.jpg"
-        />
+    <div class="gitem2">
+      <div class="imgcont">
+        <img class="img1" src="@/images/separateur-1.jpg" />
       </div>
-      <div
-        class="text-vert text-justify text-lg p-4 md:w-1/2 md:px-10 lg:px-20"
-      >
-        <h2 class="text-center text-xl font-bold italic">Informations</h2>
+      <div class="textcont">
+        <h2 class="gtitle2">Informations</h2>
         <br />
-        <p class="">
+        <p>
           Nous pouvons nous retrouver à mon cabinet et/ou réaliser des
           consultations en visio. <br />Nous définirons ensemble les modalités
           d'accompagnement qui vous conviennent, en fonction des changements que
@@ -27,76 +20,58 @@
         </p>
       </div>
     </div>
-    <div class="col-span-10 row-start-3 md:flex">
-      <div class="md:w-1/2 md:m-auto">
-        <img
-          class="h-20 m-auto aspect-square"
-          src="@/images/separateur-2.jpg"
-        />
+    <div class="gitem3">
+      <div class="imgcont">
+        <img class="img2" src="@/images/separateur-2.jpg" />
       </div>
-      <div
-        class="text-vert text-justify text-lg p-4 md:w-1/2 md:px-10 lg:px-20"
-      >
-        <h2 class="text-center text-xl font-bold">Tarifs</h2>
+      <div class="textcont">
+        <h2 class="gtitle2">Tarifs</h2>
         <br />
         <p>
           <em class="italic">
             - Consultation individuelle, adulte, enfant ou adolescent :</em
           >
-          60€ pour 45 minutes environ. <br />
+          60€ pour 45 minutes environ. <br /><br />
           <em class="italic"> - Consultation de couple ou de famille :</em>
           <br />
           80€ pour une heure environ
         </p>
       </div>
     </div>
-    <div class="col-span-10 row-start-4 md:flex md:flex-row-reverse">
-      <div class="md:w-1/2 md:m-auto">
-        <img
-          class="h-20 m-auto aspect-square"
-          src="@/images/separateur-3.jpg"
-        />
+    <div class="gitem4">
+      <div class="imgcont">
+        <img class="img2" src="@/images/separateur-3.jpg" />
       </div>
-      <div
-        class="text-vert text-justify text-lg p-4 md:w-1/2 md:px-10 lg:px-20"
-      >
-        <p class="">
+      <div class="textcont">
+        <p>
           Toute consultation manquée ou non annulée 48h à l'avance est due, sauf
-          cas de force majeure. <br />Paiement en chèque ou en espèces
-          uniquement.
+          cas de force majeure. <br /><em class="font-bold italic"
+            >Paiement en chèque ou en espèces uniquement.</em
+          >
         </p>
       </div>
     </div>
-    <div class="col-span-10 row-start-5 bg-pale md:flex">
-      <div class="md:w-1/2 md:m-auto bg-pale">
-        <img
-          class="h-32 m-auto aspect-square"
-          src="@/images/separateur-4.jpg"
-        />
+    <div class="gitem5">
+      <div class="imgcont">
+        <img class="img1" src="@/images/separateur-4.jpg" />
       </div>
-      <div
-        class="text-vert text-justify text-lg md:h-full bg-pale p-4 md:w-1/2 md:px-10 lg:px-20"
-      >
-        <p class="">
+      <div class="textcont">
+        <p>
           Les consultations avec un psychologue ne font pas l'objet d'un
           remboursement par la sécurité sociale, en dehors du service "Mon psy"
-          auquel je n'ai pas adhéré. <br />
+          auquel je n'ai pas adhéré, comme nombre de mes confrères et consoeurs
+          <br />
           Cependant, certaines mutuelles prennent en charge un certain nombre de
           consultations. <br />Renseignez-vous auprès de votre mutuelle.
         </p>
       </div>
     </div>
-    <div class="col-span-10 row-start-6 bg-pale md:flex md:flex-row-reverse">
-      <div class="md:w-1/2 md:m-auto bg-pale">
-        <img
-          class="h-20 m-auto aspect-square"
-          src="@/images/separateur-5.jpg"
-        />
+    <div class="gitem6">
+      <div class="imgcont">
+        <img class="img2" src="@/images/separateur-5.jpg" />
       </div>
-      <div
-        class="text-vert text-center text-lg md:h-full bg-pale p-4 md:w-1/2 md:px-10 lg:px-20"
-      >
-        <h2 class="text-xl font-bold">Informations légales</h2>
+      <div class="textcont">
+        <h2 class="gtitle2">Informations légales</h2>
         <br />
         <ul>
           <li>Numéro Adeli : 339333684</li>
@@ -104,10 +79,56 @@
         </ul>
       </div>
     </div>
-    <div class="col-span-1 row-span-6 col-start-12 row-start-1 bg-pale"></div>
+    <div class="gbandeau2"></div>
   </div>
 </template>
 
 <script></script>
 
-<style scoped></style>
+<style scoped>
+.gcontainer {
+  @apply relative top-40 grid grid-cols-12 bg-pale;
+}
+.gbandeau1 {
+  @apply col-span-1 row-span-6 col-start-1 row-start-1;
+}
+.gbandeau2 {
+  @apply col-span-1 row-span-6 col-start-12 row-start-1;
+}
+.gtitle {
+  @apply text-vert text-3xl text-center my-8;
+}
+.gtitle2 {
+  @apply text-center text-xl font-bold italic;
+}
+.imgcont {
+  @apply md:w-1/2 md:m-auto;
+}
+.img1 {
+  @apply h-32 m-auto aspect-square;
+}
+.textcont {
+  @apply text-vert text-justify text-lg pt-4 indent-4 md:w-1/2 md:px-10 lg:px-20;
+}
+.img2 {
+  @apply h-20 m-auto aspect-square;
+}
+.gitem1 {
+  @apply col-span-10 col-start-2 row-start-1;
+}
+.gitem2 {
+  @apply col-span-10 row-start-2 md:flex md:flex-row-reverse;
+}
+.gitem3 {
+  @apply col-span-10 row-start-3 md:flex;
+}
+.gitem4 {
+  @apply col-span-10 row-start-4 md:flex md:flex-row-reverse;
+}
+.gitem5 {
+  @apply col-span-10 row-start-5 md:flex;
+}
+.gitem6 {
+  @apply col-span-10 row-start-6 md:flex md:flex-row-reverse;
+}
+</style>

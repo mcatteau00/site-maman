@@ -1,21 +1,15 @@
 <template>
   <body class="bg-pale h-full w-full">
-    <div class="relative top-28 grid grid-cols-12 auto-rows-mini">
-      <div class="col-start-1 row-start-1 row-span-6 col-span-1 bg-pale"></div>
-      <div class="col-span-10 row-start-1 row-span-1 bg-pale">
-        <h1 class="text-vert text-4xl text-center m-5">
-          Cabinet de psychothérapie & psychologie clinique
-        </h1>
+    <div class="gcontainer">
+      <div class="gbandeau1"></div>
+      <div class="gitem2">
+        <h1 class="gtitle">Cabinet de psychothérapie & psychologie clinique</h1>
       </div>
-      <div
-        class="row-start-2 row-span-1 col-span-10 m-4 py-10 md:p-0 md:flex md:place-content-center bg-pale"
-      >
+      <div class="gitem3">
         <div class="">
-          <img class="h-auto md:h-72" src="@/images/logo.jpg" />
+          <img class="logo" src="@/images/logo.jpg" />
         </div>
-        <div
-          class="text-vert text-lg text-center pt-2 italic md:text-right md:align-middle"
-        >
+        <div class="citation">
           <p class="">
             "Faire de l’interruption, un nouveau chemin,
             <br />
@@ -36,36 +30,66 @@
           </p>
         </div>
       </div>
-      <div class="row-start-3 row-span-1 col-start-2 col-span-10 bg-pale">
-        <h2 class="text-vert text-3xl text-center">Bienvenue à vous</h2>
+      <div class="gitem4">
+        <h2 class="gtitle">Bienvenue à vous</h2>
       </div>
-      <div
-        class="row-start-4 row-span-1 col-start-2 col-span-10 bg-pale md:flex md:flex-row-reverse md:place-content-center"
-      >
-        <div
-          class="text-vert text-center p-5 md:mx-4 place-self-center bg-pale"
-        >
-          <p class="text-xl">
+      <div class="gitem5">
+        <div class="gtext">
+          <p>
             Je m'appelle Céline Allafort, je suis psychologue clinicienne et
             praticienne narrative et je suis ravie de pouvoir vous accueillir
             sur ce premier espace de rencontre.
           </p>
           <br />
-          <p class="text-xl">
+          <p>
             Je serai heureuse de vous recevoir dans mon cabinet afin
             qu'ensemble, nous puissions prendre soin de vous.
           </p>
           <br />
-          <p class="text-xl">
-            Au plaisir de vous accompagner sur votre chemin.
-          </p>
+          <p>Au plaisir de vous accompagner sur votre chemin.</p>
         </div>
       </div>
-      <div class="col-span-1 col-start-12 row-start-1 row-span-6 bg-pale"></div>
+      <div class="gbandeau2"></div>
     </div>
   </body>
 </template>
 
 <script></script>
 
-<style scoped></style>
+<style scoped>
+.gcontainer {
+  @apply relative top-40 grid grid-cols-12 bg-pale;
+}
+
+.gbandeau1 {
+  @apply col-start-1 row-start-1 row-span-6 col-span-1;
+}
+.gbandeau2 {
+  @apply col-span-1 col-start-12 row-start-1 row-span-6;
+}
+
+.gitem2 {
+  @apply col-span-10 row-start-1 row-span-1;
+}
+.gtitle {
+  @apply text-vert text-4xl text-center m-5;
+}
+.gitem3 {
+  @apply row-start-2 row-span-1 col-span-10 m-4 py-10 md:p-0 md:flex md:place-content-center;
+}
+.logo {
+  @apply h-auto md:h-72;
+}
+.citation {
+  @apply text-vert text-lg text-center pt-2 italic md:text-right md:align-middle;
+}
+.gitem4 {
+  @apply row-start-3 row-span-1 col-start-2 col-span-10;
+}
+.gitem5 {
+  @apply row-start-4 row-span-1 col-start-2 col-span-10 md:flex md:flex-row-reverse md:place-content-center;
+}
+.gtext {
+  @apply text-vert text-xl indent-4 text-center p-5 md:mx-4 place-self-center;
+}
+</style>
