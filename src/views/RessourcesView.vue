@@ -1,12 +1,11 @@
 <template>
   <div class="gcontainer">
-    <div class="gbandeau1"></div>
     <div class="gitem1">
       <h1 class="gtitle">Ressources</h1>
     </div>
     <div class="gitem2">
       <div class="imgcont">
-        <img class="img1" src="@/images/ressource1.png" />
+        <img class="img1" src="@/images/Ressources/ressource1.png" />
       </div>
       <div class="textcont">
         <h2 class="gtitle2">Mémoire traumatique et victimologie</h2>
@@ -30,7 +29,7 @@
     </div>
     <div class="gitem3">
       <div class="imgcont">
-        <img class="img1" src="@/images/ressource2.png" />
+        <img class="img1" src="@/images/Ressources/ressource2.png" />
       </div>
       <div class="textcont">
         <h2 class="gtitle2">
@@ -56,7 +55,7 @@
     </div>
     <div class="gitem4">
       <div class="imgcont">
-        <img class="img1" src="@/images/ressource3.png" />
+        <img class="img1" src="@/images/Ressources/ressource3.png" />
       </div>
       <div class="textcont">
         <h2 class="gtitle2">
@@ -84,7 +83,9 @@
         >
       </div>
     </div>
+    <div class="gbandeau1"></div>
     <div class="gbandeau2"></div>
+    <div class="gbandeau3"></div>
   </div>
 </template>
 
@@ -100,20 +101,8 @@
 .gbandeau2 {
   @apply col-span-1 row-span-6 col-start-12 row-start-1;
 }
-.gtitle {
-  @apply text-vert text-3xl text-center my-8;
-}
-.gtitle2 {
-  @apply text-center text-xl font-bold italic;
-}
-.imgcont {
-  @apply md:w-1/2 md:m-auto;
-}
-.img1 {
-  @apply h-80 m-auto;
-}
-.textcont {
-  @apply text-vert text-justify text-lg pt-4 indent-4 md:w-1/2 md:px-10 lg:px-20;
+.gbandeau3 {
+  @apply col-span-12 row-span-1 col-start-1 h-28;
 }
 .gitem1 {
   @apply col-span-10 col-start-2 row-start-1;
@@ -126,5 +115,20 @@
 }
 .gitem4 {
   @apply col-span-10 row-start-4 md:flex md:flex-row-reverse;
+}
+.gtitle {
+  @apply text-vert text-3xl text-center my-8;
+}
+.gtitle2 {
+  @apply text-center text-xl font-bold italic;
+}
+.textcont {
+  @apply text-vert text-justify text-lg pt-4 indent-4 md:w-1/2 md:px-10 lg:px-20;
+}
+.imgcont {
+  @apply md:w-1/2 md:m-auto;
+}
+.img1 {
+  @apply h-auto m-auto;
 }
 </style>

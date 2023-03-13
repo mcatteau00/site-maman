@@ -15,6 +15,10 @@ module.exports = {
       backgroundColor: {
         pale: "#FBE0C3",
       },
+      backgroundImage: {
+        // eslint-disable-next-line prettier/prettier
+        my: "url('@/images/Photos/Photo-9.JPG')",
+      },
     },
   },
   plugins: [],

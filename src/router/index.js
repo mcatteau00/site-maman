@@ -14,18 +14,20 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/ContactView.vue"),
   },
   {
-    path: "/LaPsychotherapie",
-    name: "LaPsychotherapie",
+    path: "/LaPsychotherapieAdulte",
+    name: "LaPsychotherapieAdulte",
     component: () =>
       import(
-        /* webpackChunkName: "about" */ "../views/LaPsychotherapieView.vue"
+        /* webpackChunkName: "about" */ "../views/LaPsychotherapieAdulteView.vue"
       ),
   },
   {
-    path: "/Comment",
-    name: "Comment",
+    path: "/LaPsychotherapieFamilliale",
+    name: "LaPsychotherapieFamilliale",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/CommentView.vue"),
+      import(
+        /* webpackChunkName: "about" */ "../views/LaPsychotherapieFamillialeView.vue"
+      ),
   },
   {
     path: "/QuiSuisJe",
@@ -46,10 +48,12 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/RessourcesView.vue"),
   },
   {
-    path: "/PourQui",
-    name: "PourQui",
+    path: "/LesEntretiensNarratifs",
+    name: "LesEntretiensNarratifs",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/PourQuiView.vue"),
+      import(
+        /* webpackChunkName: "about" */ "../views/LesEntretiensNarratifsView.vue"
+      ),
   },
   {
     path: "/Aujourdhui",
@@ -62,6 +66,50 @@ const routes = [
     name: "MesFormations",
     component: () =>
       import(/* webpackChunckName: "about" */ "../views/MesFormationsView.vue"),
+  },
+  {
+    path: "/PageEnConstruction",
+    name: "PageEnConstruction",
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ "../views/PageEnConstructionView.vue"
+      ),
+  },
+  {
+    path: "/MentionsLeg",
+    name: "MentionsLeg",
+    component: () =>
+      import(/*webpackChunckName : "about" */ "../views/MentionsLegView.vue"),
+  },
+  {
+    path: "/CGU",
+    name: "CGU",
+    component: () =>
+      import(/*webpackChunckName: "about" */ "../views/CGUView.vue"),
+  },
+  {
+    path: "/LaPsychotherapieAdos",
+    name: "LaPsychotherapieAdos",
+    component: () =>
+      import(
+        /*webpackChunckName: "about" */ "../views/LaPsychotherapieAdosView.vue"
+      ),
+  },
+  {
+    path: "/LaPsychotherapieEnfants",
+    name: "LaPsychotherapieEnfants",
+    component: () =>
+      import(
+        /*webpackChunckName: "about"*/ "../views/LaPsychotherapieEnfantsView.vue"
+      ),
+  },
+  {
+    path: "/LesModalitesDeLaRencontre",
+    name: "LesModalitesDeLaRencontre",
+    component: () =>
+      import(
+        /*webpackChunckName : "about"*/ "../views/LesModalitesDeLaRencontreView.vue"
+      ),
   },
 ];
 

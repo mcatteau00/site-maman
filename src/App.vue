@@ -4,14 +4,18 @@
   </header>
   <router-view />
 
-  <footer></footer>
+  <footer>
+    <div class="app"><FooterView /></div>
+  </footer>
 </template>
 
 <script>
 import MainMenu from "@/components/MainMenu.vue";
+import FooterView from "./components/FooterView.vue";
 export default {
   components: {
     MainMenu,
+    FooterView,
   },
 };
 </script>
@@ -25,5 +29,9 @@ export default {
 }
 .app {
   background-color: #fbe0c3;
+}
+.test {
+  width: 100%;
+  align-items: stretch;
 }
 </style>
