@@ -17,9 +17,8 @@ module.exports = {
       },
       backgroundImage: {
         // eslint-disable-next-line prettier/prettier
-        my: "url('@/images/Photos/Photo-9.JPG')",
+        my: "url('@/images/Photos/Photo-16.jpg')",
       },
     },
   },
-  plugins: [],
 };

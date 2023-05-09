@@ -15,12 +15,10 @@
         ><img class="imgb1" src="@/images/linkedin-logo.png"
       /></a>
     </div>
-    <div class="itemb2"></div>
-    <div class="itemb3">
+    <div class="itemb3"></div>
+    <div class="itemb4">
       <img class="imgb2" src="@/images/phone_icon.png" alt="logo-téléphone" />
       <p>06-56-67-62-24</p>
-    </div>
-    <div class="itemb4">
       <img class="imgb3" src="@/images/mail_icon.png" />
       <p>celine.allafort.pro@gmail.com</p>
     </div>
@@ -34,7 +32,9 @@
         <div class="branding">
           <img class="imgh1" src="@/images/logo.jpg" />
           <div v-show="!mobile">
-            <RouterLink class="link" :to="{ name: 'Home' }">Accueil</RouterLink>
+            <RouterLink class="link" :to="{ name: 'HomeView' }"
+              >Accueil</RouterLink
+            >
           </div>
         </div>
         <div v-show="!mobile" class="hitem1">
@@ -59,22 +59,22 @@
                 <li>
                   <RouterLink
                     class="link"
-                    :to="{ name: 'LaPsychotherapieFamilliale' }"
-                    >La psychothérapie familliale</RouterLink
+                    :to="{ name: 'LaPsychotherapieFamiliale' }"
+                    >La psychothérapie familiale</RouterLink
                   >
                 </li>
                 <li>
                   <RouterLink
                     class="link"
                     :to="{ name: 'LaPsychotherapieEnfants' }"
-                    >La psychothérapie d'enfants</RouterLink
+                    >La psychothérapie d'enfant</RouterLink
                   >
                 </li>
                 <li>
                   <RouterLink
                     class="link"
                     :to="{ name: 'LaPsychotherapieAdos' }"
-                    >La psychothérapie d'adolescents</RouterLink
+                    >La psychothérapie d'adolescent</RouterLink
                   >
                 </li>
                 <li>
@@ -99,7 +99,7 @@
                   >
                 </li>
                 <li>
-                  <RouterLink class="link" :to="{ name: 'Aujourdhui' }"
+                  <RouterLink class="link" :to="{ name: 'AuJourdhui' }"
                     >Aujourd'hui</RouterLink
                   >
                 </li>
@@ -113,7 +113,7 @@
           </div>
         </div>
         <div v-show="!mobile" class="hitem3">
-          <RouterLink class="link" :to="{ name: 'Informations' }"
+          <RouterLink class="link" :to="{ name: 'InformationsView' }"
             >Informations et tarifs</RouterLink
           >
         </div>
@@ -123,7 +123,7 @@
           >
         </div>
         <div v-show="!mobile" class="hitem5">
-          <RouterLink class="link" :to="{ name: 'Contact' }"
+          <RouterLink class="link" :to="{ name: 'ContactView' }"
             >Contact</RouterLink
           >
         </div>
@@ -142,96 +142,108 @@
           <li>
             <RouterLink
               class="link"
-              :to="{ name: 'Home' }"
+              :to="{ name: 'HomeView' }"
               @click="mobileNav = false"
               >Accueil</RouterLink
             >
           </li>
           <div class="border"></div>
           <li>
-            <h2 class="mobiletitle">Entreprendre une psychothérapie</h2>
-          </li>
-          <li>
-            <RouterLink
-              class="link"
-              :to="{ name: 'LaPsychotherapieAdulte' }"
-              @click="mobileNav = false"
-              >- La psychothérapie individuelle d'adulte</RouterLink
-            >
-          </li>
-          <li>
-            <RouterLink
-              class="link"
-              :to="{ name: 'LesEntretiensNarratifs' }"
-              @click="mobileNav = false"
-              >- Les entretiens Narratifs</RouterLink
-            >
-          </li>
-          <li>
-            <RouterLink
-              class="link"
-              :to="{ name: 'LaPsychotherapieFamilliale' }"
-              @click="mobileNav = false"
-              >- La psychothérapie familliale</RouterLink
-            >
-          </li>
-          <li>
-            <RouterLink
-              class="link"
-              :to="{ name: 'LaPsychotherapieEnfants' }"
-              @click="mobileNav = false"
-              >- La psychothérapie d'enfants</RouterLink
-            >
-          </li>
-          <li>
-            <RouterLink
-              class="link"
-              :to="{ name: 'LaPsychotherapieAdos' }"
-              @click="mobileNav = false"
-              >- La psychothérapie d'adolescents</RouterLink
-            >
-          </li>
-          <li>
-            <RouterLink
-              class="link"
-              :to="{ name: 'LesModalitesDeLaRencontre' }"
-              @click="mobileNav = false"
-              >- Les modalités de la rencontre</RouterLink
-            >
-          </li>
-          <div class="border"></div>
-          <li>
-            <h2 class="mobiletitle">Qui suis je ?</h2>
-          </li>
-          <li class="">
-            <RouterLink
-              class="link"
-              :to="{ name: 'QuiSuisJe' }"
-              @click="mobileNav = false"
-              >- Mon cheminement</RouterLink
-            >
-          </li>
-          <li>
-            <RouterLink
-              class="link"
-              :to="{ name: 'Aujourdhui' }"
-              @click="mobileNav = false"
-              >- Aujourd'hui</RouterLink
-            >
-          </li>
-          <li>
-            <RouterLink
-              class="link"
-              :to="{ name: 'MesFormations' }"
-              @click="mobileNav = false"
-              >- Mes principales formations</RouterLink
-            >
+            <div class="group">
+              <h2 class="tlink2">Entreprendre une psychothérapie</h2>
+              <div class="hdropdown">
+                <ul class="drop">
+                  <li>
+                    <RouterLink
+                      class="link"
+                      :to="{ name: 'LaPsychotherapieAdulte' }"
+                      @click="mobileNav = false"
+                      >La psychothérapie individuelle d'adultes</RouterLink
+                    >
+                  </li>
+                  <li>
+                    <RouterLink
+                      class="link"
+                      :to="{ name: 'LesEntretiensNarratifs' }"
+                      @click="mobileNav = false"
+                      >Les entretiens narratifs</RouterLink
+                    >
+                  </li>
+                  <li>
+                    <RouterLink
+                      class="link"
+                      :to="{ name: 'LaPsychotherapieFamiliale' }"
+                      @click="mobileNav = false"
+                      >La psychothérapie familiale</RouterLink
+                    >
+                  </li>
+                  <li>
+                    <RouterLink
+                      class="link"
+                      :to="{ name: 'LaPsychotherapieEnfants' }"
+                      @click="mobileNav = false"
+                      >La psychothérapie d'enfant</RouterLink
+                    >
+                  </li>
+                  <li>
+                    <RouterLink
+                      class="link"
+                      :to="{ name: 'LaPsychotherapieAdos' }"
+                      @click="mobileNav = false"
+                      >La psychothérapie d'adolescent</RouterLink
+                    >
+                  </li>
+                  <li>
+                    <RouterLink
+                      class="link"
+                      :to="{ name: 'LesModalitesDeLaRencontre' }"
+                      @click="mobileNav = false"
+                      >Les modalités de la rencontre</RouterLink
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
           <div class="border"></div>
           <li>
+            <div class="group">
+              <h2 class="tlink2">Qui suis je ?</h2>
+              <div class="hdropdown">
+                <ul class="drop">
+                  <li>
+                    <RouterLink
+                      class="link"
+                      :to="{ name: 'QuiSuisJe' }"
+                      @click="mobileNav = false"
+                      >Mon cheminement</RouterLink
+                    >
+                  </li>
+                  <li>
+                    <RouterLink
+                      class="link"
+                      :to="{ name: 'AuJourdhui' }"
+                      @click="mobileNav = false"
+                      >Aujourd'hui</RouterLink
+                    >
+                  </li>
+                  <li>
+                    <RouterLink
+                      class="link"
+                      :to="{ name: 'MesFormations' }"
+                      @click="mobileNav = false"
+                      >Mes principales formations</RouterLink
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <div class="border"></div>
+          <li>
             <RouterLink
               class="link"
-              :to="{ name: 'Informations' }"
+              :to="{ name: 'InformationsView' }"
               @click="mobileNav = false"
               >Informations et tarifs</RouterLink
             >
@@ -247,7 +259,7 @@
           <li>
             <RouterLink
               class="link"
-              :to="{ name: 'Contact' }"
+              :to="{ name: 'ContactView' }"
               @click="mobileNav = false"
               >Contact</RouterLink
             >
@@ -277,9 +289,9 @@
         <div v-show="mobile" class="cont">
           <p>&copy; Céline Allafort 2023</p>
           <RouterLink :to="{ name: 'MentionsLeg' }"
-            >Mentions Légales</RouterLink
+            >Mentions Légales |</RouterLink
           >
-          <RouterLink :to="{ name: 'CGU' }">CGU</RouterLink>
+          <RouterLink :to="{ name: 'CGU' }"> CGU</RouterLink>
         </div>
       </div>
     </div>
@@ -294,10 +306,9 @@ export default {
       mobile: null,
       mobileNav: null,
       windowWidth: null,
-      opacity: null,
-      lastScrollPosition: 0,
-      scrollDirection: null,
-      currentScrollPosition: 0,
+      opacity: 1,
+      windowHeight: 0,
+      scrollPosition: 0,
     };
   },
   created() {
@@ -306,22 +317,30 @@ export default {
     this.opacity = 100;
   },
   mounted() {
-    window.addEventListener("scroll", this.updateScroll);
+    this.windowHeight = window.innerHeight;
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  beforeUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
     toggleMobileNav() {
       this.mobileNav = !this.mobileNav;
     },
 
-    updateScroll() {
-      const currentScrollPosition = window.pageYOffset;
-      if (currentScrollPosition > this.lastScrollPosition) {
-        this.scrollDirection = "down";
-        this.opacity = 1 - currentScrollPosition / 200;
-      } else {
-        this.scrollDirection = "up";
-        this.opacity = 1 - currentScrollPosition / 200;
-      }
+    handleScroll() {
+      const scrollTop =
+        window.pageYOffset ||
+        (document.documentElement || document.body.parentNode || document.body)
+          .scrollTop;
+
+      // Récupération de la hauteur totale de la page
+      const scrollHeight =
+        (document.documentElement || document.body).scrollHeight -
+        (document.documentElement || document.body).clientHeight;
+
+      // Calcul de la valeur d'opacité en fonction de la position verticale de la page
+      this.opacity = 1 - (2 * scrollTop) / scrollHeight;
     },
     checkScreen() {
       this.windowWidth = window.innerWidth;
@@ -345,14 +364,11 @@ export default {
 .itemb1 {
   @apply col-start-1 col-end-4 md:col-start-1 md:col-end-2;
 }
-.itemb2 {
-  @apply col-start-2 col-end-9;
-}
 .itemb3 {
-  @apply col-start-9 col-end-11 flex space-x-2 justify-end px-4;
+  @apply col-start-8 col-span-2 flex space-x-2 justify-end px-4;
 }
 .itemb4 {
-  @apply col-start-11 col-span-2 flex space-x-2 justify-end px-4;
+  @apply col-start-6 col-span-6 flex space-x-2 justify-end row-start-1 text-right text-vert px-4;
 }
 .imgb1 {
   @apply h-8 w-8 mx-2 aspect-square;
@@ -387,7 +403,7 @@ export default {
   @apply col-start-1 col-end-5 h-28 relative top-1 left-2 flex;
 }
 .hitem1 {
-  @apply col-start-3 col-end-5 relative -top-3;
+  @apply col-start-3 col-end-5;
 }
 .hitem2 {
   @apply col-start-5 col-end-7;
@@ -405,7 +421,10 @@ export default {
   @apply relative flex flex-col;
 }
 .tlink {
-  @apply text-center;
+  @apply text-center self-center;
+}
+.tlink2 {
+  @apply text-center underline;
 }
 .hdropdown {
   @apply hidden group-hover:block;

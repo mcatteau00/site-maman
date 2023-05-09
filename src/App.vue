@@ -1,23 +1,16 @@
 <template>
-  <header>
-    <div class="app"><MainMenu /></div>
-  </header>
-  <router-view />
-
-  <footer>
-    <div class="app"><FooterView /></div>
-  </footer>
+  <div>
+    <header>
+      <div class="app">Test</div>
+    </header>
+    <main>
+      <router-view />
+    </main>
+    <footer></footer>
+  </div>
 </template>
 
 <script>
-import MainMenu from "@/components/MainMenu.vue";
-import FooterView from "./components/FooterView.vue";
-export default {
-  components: {
-    MainMenu,
-    FooterView,
-  },
-};
 </script>
 
 <style lang="scss">

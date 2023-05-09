@@ -3,96 +3,108 @@ import { createRouter, createWebHistory } from "vue-router";
 const routes = [
   {
     path: "/",
-    name: "Home",
+    name: "HomeView",
     component: () =>
-      import(/*webpackChunkName: "about" */ "../views/HomeView.vue"),
+      import(/*webpackChunkName: "about" */ "../views/Divers/HomeView.vue"),
   },
   {
     path: "/Contact",
-    name: "Contact",
+    name: "ContactView",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/ContactView.vue"),
+      import(/* webpackChunkName: "about" */ "../views/Divers/ContactView.vue"),
   },
   {
     path: "/LaPsychotherapieAdulte",
     name: "LaPsychotherapieAdulte",
     component: () =>
       import(
-        /* webpackChunkName: "about" */ "../views/LaPsychotherapieAdulteView.vue"
+        /* webpackChunkName: "about" */ "../views/EntreprendreUnePsychothérapie/LaPsychotherapieAdulteView.vue"
       ),
   },
   {
-    path: "/LaPsychotherapieFamilliale",
-    name: "LaPsychotherapieFamilliale",
+    path: "/LaPsychotherapieFamiliale",
+    name: "LaPsychotherapieFamiliale",
     component: () =>
       import(
-        /* webpackChunkName: "about" */ "../views/LaPsychotherapieFamillialeView.vue"
+        /* webpackChunkName: "about" */ "../views/EntreprendreUnePsychothérapie/LaPsychotherapieFamilialeView.vue"
       ),
   },
   {
     path: "/QuiSuisJe",
     name: "QuiSuisJe",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/QuiSuisJeView.vue"),
+      import(
+        /* webpackChunkName: "about" */ "../views/QuiSuisJe/QuiSuisJeView.vue"
+      ),
   },
   {
     path: "/Informations",
-    name: "Informations",
+    name: "InformationsView",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/InformationsView.vue"),
+      import(
+        /* webpackChunkName: "about" */ "../views/Divers/InformationsView.vue"
+      ),
   },
   {
     path: "/Ressources",
     name: "Ressources",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/RessourcesView.vue"),
+      import(
+        /* webpackChunkName: "about" */ "../views/Divers/RessourcesView.vue"
+      ),
   },
   {
     path: "/LesEntretiensNarratifs",
     name: "LesEntretiensNarratifs",
     component: () =>
       import(
-        /* webpackChunkName: "about" */ "../views/LesEntretiensNarratifsView.vue"
+        /* webpackChunkName: "about" */ "../views/EntreprendreUnePsychothérapie/LesEntretiensNarratifsView.vue"
       ),
   },
   {
     path: "/Aujourdhui",
-    name: "Aujourdhui",
+    name: "AuJourdhui",
     component: () =>
-      import(/* webpackChunckName: "about" */ "../views/AujourdhuiView.vue"),
+      import(
+        /* webpackChunckName: "about" */ "../views/QuiSuisJe/AujourdhuiView.vue"
+      ),
   },
   {
     path: "/MesFormations",
     name: "MesFormations",
     component: () =>
-      import(/* webpackChunckName: "about" */ "../views/MesFormationsView.vue"),
+      import(
+        /* webpackChunckName: "about" */ "../views/QuiSuisJe/MesFormationsView.vue"
+      ),
   },
   {
     path: "/PageEnConstruction",
     name: "PageEnConstruction",
     component: () =>
       import(
-        /* webpackChunkName: "about" */ "../views/PageEnConstructionView.vue"
+        /* webpackChunkName: "about" */ "../views/Divers/PageEnConstructionView.vue"
       ),
   },
   {
     path: "/MentionsLeg",
     name: "MentionsLeg",
     component: () =>
-      import(/*webpackChunckName : "about" */ "../views/MentionsLegView.vue"),
+      import(
+        /*webpackChunckName : "about" */ "../views/Legal/MentionsLegView.vue"
+      ),
   },
   {
     path: "/CGU",
     name: "CGU",
     component: () =>
-      import(/*webpackChunckName: "about" */ "../views/CGUView.vue"),
+      import(/*webpackChunckName: "about" */ "../views/Legal/CGUView.vue"),
   },
   {
     path: "/LaPsychotherapieAdos",
     name: "LaPsychotherapieAdos",
     component: () =>
       import(
-        /*webpackChunckName: "about" */ "../views/LaPsychotherapieAdosView.vue"
+        /*webpackChunckName: "about" */ "../views/EntreprendreUnePsychothérapie/LaPsychotherapieAdosView.vue"
       ),
   },
   {
@@ -100,7 +112,7 @@ const routes = [
     name: "LaPsychotherapieEnfants",
     component: () =>
       import(
-        /*webpackChunckName: "about"*/ "../views/LaPsychotherapieEnfantsView.vue"
+        /*webpackChunckName: "about"*/ "../views/EntreprendreUnePsychothérapie/LaPsychotherapieEnfantsView.vue"
       ),
   },
   {
@@ -108,14 +120,12 @@ const routes = [
     name: "LesModalitesDeLaRencontre",
     component: () =>
       import(
-        /*webpackChunckName : "about"*/ "../views/LesModalitesDeLaRencontreView.vue"
+        /*webpackChunckName : "about"*/ "../views/EntreprendreUnePsychothérapie//LesModalitesDeLaRencontreView.vue"
       ),
   },
 ];
-
-const router = createRouter({
+const Router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
 });
-
-export default router;
+export default Router;
